@@ -1,0 +1,478 @@
+$primary:  #111111;
+$secondary: #ffffff;
+$tartiary1: #efe162;
+$tartiary2: #fff9cf;
+$breakpoint-foldable: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1366px;
+$breakpoint-desktop-large: 1920px;
+@mixin article-body {
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    padding: 1rem;
+}
+@mixin section-title{
+    height: 50px;
+    font-family: 'GilRoy','Helvetica','sans-serif';
+    font-weight: bold;
+    color: $tartiary1;
+}
+@mixin stack-title{
+    font-family: 'MontserratMedium';
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    padding: 1rem;
+}
+@mixin stack-detail {
+    font-family: 'GilRoy','Helvetica','sans-serif';
+    letter-spacing: 1px;
+    word-break: break-word;
+    background: rgba(19,19,19,1);
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.3rem;
+    box-shadow: -2px -2px 3px rgba(0,0,0,1), 2px 2px 3px rgba(0,0,0,1);
+}
+
+@font-face {
+    font-family: 'MudHoney';
+    src: url('./assests/fonts/MudHoney.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'GilRoy';
+    src: url('./assests/fonts/GilRoy.otf') format('truetype');
+}
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url('./assests/fonts/MontserratMedium.otf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #313131; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 5px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(182, 182, 182); 
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+    background: $primary;
+}
+.highlight{
+    color: $tartiary2;
+}
+.container{
+    color: $secondary;
+    display: grid;
+    grid-template-rows: 100px calc(100vh - 200px) 100px;
+    background-image: url(./assests/images/me.jpg);
+    background-size: cover;
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr;
+        justify-items: center;
+        align-items: center;
+        background: rgba($color: #000000, $alpha: 0.6);
+        .logo{
+            font-family: 'MudHoney';
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .name{
+            font-family: 'MontserratMedium','Helvetica','sans-serif';
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 0.8rem;
+        }
+        .menu{
+            font-size: 1.3rem;
+        }
+    }
+
+    .content{
+        margin: 0px 20px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        font-size: 2rem;
+        
+        section{
+            display: flex;
+            // color: rgb(114, 114, 114);
+            min-height: calc(100vh - 200px);
+            align-items: center;
+        }
+        
+        #introduction{
+            
+            p{
+                font-size: 5rem;
+                font-family: 'Helvetica','GilRoy','sans-serif';
+                font-weight: bold;
+                // height: max-content;
+                padding: 2rem;
+                filter: drop-shadow(2px 4px 6px black);
+                #firstname{
+                    // color: #f4e664;
+                    color: $tartiary2;
+                }
+                #identity{
+                    // color: #fff9cf;
+                    color: $tartiary1;
+                }
+            }
+            div{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        
+        #skills{
+            article{
+                width: 90%;
+                height: 100%;
+                margin: auto;
+                .section_title{
+                   @include section-title;
+                }
+                .tech_stack{
+                    @include article-body;
+                    .stack_title{
+                        @include stack_title;
+                    }
+                    .frontend_stack, .backend_stack, .core_stack{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        justify-items: center;
+                        align-items: center;
+                        border-radius: 10px;
+                        
+                        .tech_item{
+                            height: 100px;
+                            width: 100px;
+                            font-size: 2em;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 1rem;
+                        }
+                    }
+                    .backend_stack{
+                        background: rgba(50,50,50,1);
+                        .tech_item{
+                            background: rgba(50,50,50,1);
+                            box-shadow: -10px -10px 15px rgba(65,65,65,0.5), 10px 10px 15px rgba(30,30,30,0.5), inset -10px -10px 15px rgba(65,65,65,0.5), inset 10px 10px 15px rgba(30,30,30,0.5);
+                        }
+                    }
+                    .frontend_stack{
+                        background: rgb(236, 236, 236);
+                        color: rgba(50,50,50,1);
+                        .tech_item{
+                            background: rgba(236,236,236,1);
+                            box-shadow: -10px -10px 15px rgba(255,255,255,0.12), 10px 10px 15px rgba(70,70,70,0.5), inset 10px -10px 15px rgba(255,255,255,0.12), inset 10px 10px 15px rgba(70,70,70,0.5);
+                        }
+                    }
+                    .core_stack{
+                        background: rgba(19,19,19,1);
+                        .tech_item{
+                            background: rgba(19,19,19,1);
+                            box-shadow: -10px -10px 15px rgba(39,39,39,0.5), 10px 10px 15px rgba(0,0,0,0.5), inset -10px -10px 15px rgba(39,39,39,0.5), inset 10px 10px 15px rgba(0,0,0,0.5);
+                        }
+                    }
+                }
+            }
+            
+        }
+        #aboutme{
+            article{
+                width: 90%;
+                height: 100%;
+                margin: auto;
+                .section_title{
+                    @include section-title;
+                }
+                .edu_stack{
+                    @include article-body;
+                    .stack_title{
+                        @include stack-title;
+                    }
+                    .stack_detail{
+                        @include stack-detail;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        font-family: 'GilRoy','Helvetica','sans-serif';
+        font-weight: bold;
+        div{
+            padding: 0rem 1rem;
+        }
+        .scroll{
+            text-align: center;
+        }
+        .scroll-indicator{
+            display: grid;
+            justify-content: end;
+            padding: 0rem 1.5rem;
+        }
+    }
+}
+
+.container>*{
+    // outline: solid 1px white;
+}
+@media (max-width: $breakpoint-foldable - 1 ) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+    .container{
+        background-image: url(./assests/images/me-portrait.jpg);
+        // background-size: contain;
+        background-repeat: no-repeat;
+        grid-template-rows: 80px calc(100vh - 140px) 60px;
+        nav{
+            grid-template-columns: 1fr 2fr 1fr;
+
+            .logo{
+                font-size: 0.8rem;
+            }
+
+            .name{
+                font-size: 1.0rem;
+                letter-spacing: 0.2rem;
+            }
+            .menu{
+                font-size: 1.3rem;
+            }
+        }
+
+        .content{
+            font-size: 2rem;
+            
+            section{
+                flex-direction: column;
+                min-height: calc(100vh - 140px);
+                align-items: center;
+            }
+            
+            #introduction{
+                justify-content: center;
+                p{
+                    font-size: 1.6rem;
+                    height: max-content;
+                    padding: 1.6rem;
+                }
+                div{
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            #skills{
+                article{
+                    .section_title{
+                        font-size: 1.2rem;
+                    }
+                    .tech_stack{
+                        .stack_title{
+                            font-size: 0.8rem;
+                            padding: 1rem 0.1rem;
+                        }
+                        .frontend_stack, .backend_stack, .core_stack{
+                            .tech_item{
+                                height: 70px;
+                                width: 70px;
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            font-size: 0.7em;
+        }
+    }
+}
+@media (min-width: $breakpoint-foldable ) and (max-width: $breakpoint-tablet - 1 ) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+    .container{
+        background-image: url(./assests/images/me-portrait.jpg);
+        // background-size: contain;
+        background-repeat: no-repeat;
+        grid-template-rows: 70px calc(100vh - 120px) 50px;
+        nav{
+            grid-template-columns: 1fr 2fr 1fr;
+
+            .logo{
+                font-size: 0.8rem;
+            }
+
+            .name{
+                font-size: 1.0rem;
+                letter-spacing: 0.2rem;
+            }
+            .menu{
+                font-size: 1.3rem;
+            }
+        }
+
+        .content{
+            font-size: 2rem;
+            
+            section{
+                flex-direction: column;
+                min-height: calc(100vh - 120px);
+                align-items: center;
+            }
+            
+            #introduction{
+                justify-content: center;
+                p{
+                    font-size: 2rem;
+                    height: max-content;
+                    padding: 2rem;
+                    
+                }
+                div{
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            #skills{
+                article{
+                    width: 100%;
+                    .section_title{
+                        height: 40px;
+                        font-size: 0.8em;
+
+                    }
+                    .tech_stack{
+                        .stack_title{
+                            font-size: 1rem;
+                        }
+                        .frontend_stack, .backend_stack, .core_stack{
+                            .tech_item{
+                                height: 80px;
+                                width: 80px;
+                                font-size: 1.6em;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            
+        }
+        footer{
+            font-size: 0.7em;
+        }
+
+    }
+}
+@media (min-width: $breakpoint-foldable ) and (max-width: $breakpoint-tablet - 1 ) and (orientation : landscape) {
+    .container{
+        background-image: url(./assests/images/me.jpg);
+        background-size: cover;
+        grid-template-rows: 50px calc(100vh - 90px) 40px;
+        .content{
+            section{
+                min-height: calc(100vh - 90px);
+            }
+            #skills{
+                article{
+                    .tech_stack{
+                        .frontend_stack, .backend_stack, .core_stack{
+                            .tech_item{
+                                height: 70px;
+                                width: 70px;
+                                font-size: 1.4em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $breakpoint-tablet ) and (max-width: $breakpoint-desktop - 1 ) {
+    .container{
+        background-image: url(./assests/images/me.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-template-rows: 80px calc(100vh - 140px) 60px;
+        nav{
+            grid-template-columns: 1fr 5fr 1fr;
+
+            .logo{
+                font-size: 1rem;
+            }
+
+        }
+        .content{
+            section{
+                min-height: calc(100vh - 140px);
+            }
+            #introduction{ 
+                p {
+                    font-size: 3rem;
+                }
+            }
+        }
+        footer{
+            font-size: 0.8em;
+        }
+
+    }
+}
+@media (min-width: $breakpoint-desktop ) and (max-width: $breakpoint-desktop-large - 1 ) {
+    .container{
+        nav{
+            grid-template-columns: 1fr 5fr 1fr;
+
+            .logo{
+                font-size: 1rem;
+            }
+
+        }
+
+    }
+}
