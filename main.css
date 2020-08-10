@@ -104,6 +104,7 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 3rem;
 }
 
 .container .content #introduction p {
@@ -256,6 +257,126 @@ html, body {
   font-size: 1.3rem;
   -webkit-box-shadow: -2px -2px 3px black, 2px 2px 3px black;
           box-shadow: -2px -2px 3px black, 2px 2px 3px black;
+}
+
+.container .content #contactme article {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.container .content #contactme article .section_title {
+  height: 50px;
+  font-family: 'GilRoy','Helvetica','sans-serif';
+  font-weight: bold;
+  color: #efe162;
+}
+
+.container .content #contactme article .connect_stack {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.container .content #contactme article .connect_stack .stack_title {
+  font-family: 'MontserratMedium';
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  padding: 1rem;
+}
+
+.container .content #contactme article .connect_stack .stack_detail {
+  font-family: 'GilRoy','Helvetica','sans-serif';
+  letter-spacing: 1px;
+  word-break: break-word;
+  background: #131313;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.3rem;
+  -webkit-box-shadow: -2px -2px 3px black, 2px 2px 3px black;
+          box-shadow: -2px -2px 3px black, 2px 2px 3px black;
+}
+
+.container .content #contactme article .connect_stack .contact_links {
+  text-align: center;
+  padding: 3rem;
+}
+
+.container .content #contactme article .connect_stack .contact_links a button {
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+  font-size: 4rem;
+  margin: 0.5rem 1rem;
+  color: white;
+  background: transparent;
+}
+
+.container .content #contactme article .connect_stack .contact_links a .linkedin {
+  -webkit-animation: breath 8s ease-in-out infinite;
+          animation: breath 8s ease-in-out infinite;
+}
+
+.container .content #contactme article .connect_stack .contact_links a .email {
+  -webkit-animation: breath2 8s ease-in-out infinite;
+          animation: breath2 8s ease-in-out infinite;
+}
+
+@-webkit-keyframes breath {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: #0e76a8;
+    -webkit-box-shadow: -10px -10px 15px rgba(14, 118, 168, 0.7), 10px 10px 15px rgba(14, 118, 168, 0.7);
+            box-shadow: -10px -10px 15px rgba(14, 118, 168, 0.7), 10px 10px 15px rgba(14, 118, 168, 0.7);
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+@keyframes breath {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: #0e76a8;
+    -webkit-box-shadow: -10px -10px 15px rgba(14, 118, 168, 0.7), 10px 10px 15px rgba(14, 118, 168, 0.7);
+            box-shadow: -10px -10px 15px rgba(14, 118, 168, 0.7), 10px 10px 15px rgba(14, 118, 168, 0.7);
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+@-webkit-keyframes breath2 {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: #0ea87a;
+    -webkit-box-shadow: -10px -10px 15px rgba(14, 168, 122, 0.7), 10px 10px 15px rgba(14, 168, 122, 0.7);
+            box-shadow: -10px -10px 15px rgba(14, 168, 122, 0.7), 10px 10px 15px rgba(14, 168, 122, 0.7);
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+@keyframes breath2 {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: #0ea87a;
+    -webkit-box-shadow: -10px -10px 15px rgba(14, 168, 122, 0.7), 10px 10px 15px rgba(14, 168, 122, 0.7);
+            box-shadow: -10px -10px 15px rgba(14, 168, 122, 0.7), 10px 10px 15px rgba(14, 168, 122, 0.7);
+  }
+  100% {
+    background: transparent;
+  }
 }
 
 .container footer {
@@ -425,6 +546,32 @@ html, body {
     width: 80px;
     font-size: 1.6em;
   }
+  .container .content #aboutme article {
+    width: 100%;
+  }
+  .container .content #aboutme article .section_title {
+    height: 40px;
+    font-size: 0.8em;
+  }
+  .container .content #aboutme article .edu_stack .stack_title {
+    font-size: 1rem;
+  }
+  .container .content #aboutme article .edu_stack .stack_detail {
+    font-size: 1.1rem;
+  }
+  .container .content #contactme article {
+    width: 100%;
+  }
+  .container .content #contactme article .section_title {
+    height: 40px;
+    font-size: 0.8em;
+  }
+  .container .content #contactme article .connect_stack .stack_title {
+    font-size: 1rem;
+  }
+  .container .content #contactme article .connect_stack .stack_detail {
+    font-size: 1.1rem;
+  }
   .container footer {
     font-size: 0.7em;
   }
@@ -473,6 +620,13 @@ html, body {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1365px) and (orientation: portrait) {
+  .container {
+    background: url("./assests/images/me-portrait.jpg");
+    background-size: cover;
+  }
+}
+
 @media (min-width: 1366px) and (max-width: 1919px) {
   .container nav {
     -ms-grid-columns: 1fr 5fr 1fr;
@@ -480,6 +634,46 @@ html, body {
   }
   .container nav .logo {
     font-size: 1rem;
+  }
+  .container .content {
+    margin: 0 25px;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1919px) and (orientation: portrait) {
+  .container {
+    background: url("./assests/images/me-portrait.jpg");
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container nav {
+    -ms-grid-columns: 1fr 5fr 1fr;
+        grid-template-columns: 1fr 5fr 1fr;
+  }
+  .container nav .logo {
+    font-size: 1rem;
+  }
+  .container .content {
+    width: calc( 100vw - (13.85vw));
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0 25px;
+  }
+  .container .content #skills article {
+    width: 1300px;
+  }
+  .container .content #aboutme article {
+    width: 1300px;
+  }
+  .container .content #contactme article {
+    width: 1300px;
+  }
+  .container footer {
+    -ms-grid-columns: 1fr 5fr 1fr;
+        grid-template-columns: 1fr 5fr 1fr;
+    justify-items: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

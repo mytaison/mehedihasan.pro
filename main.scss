@@ -34,7 +34,17 @@ $breakpoint-desktop-large: 1920px;
     font-size: 1.3rem;
     box-shadow: -2px -2px 3px rgba(0,0,0,1), 2px 2px 3px rgba(0,0,0,1);
 }
-
+@mixin glow-icon {
+    content: '';
+    // position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #56ccf2 , #2f80ed);
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+}
 @font-face {
     font-family: 'MudHoney';
     src: url('./assests/fonts/MudHoney.ttf') format('truetype');
@@ -122,6 +132,7 @@ html,body{
             // color: rgb(114, 114, 114);
             min-height: calc(100vh - 200px);
             align-items: center;
+            margin-bottom: 3rem;
         }
         
         #introduction{
@@ -224,6 +235,80 @@ html,body{
                     .stack_detail{
                         @include stack-detail;
                     }
+                }
+            }
+        }
+
+        #contactme{
+            article{
+                width: 90%;
+                height: 100%;
+                margin: auto;
+                .section_title{
+                    @include section-title;
+                }
+                .connect_stack{
+                    @include article-body;
+                    .stack_title{
+                        @include stack-title;
+                    }
+                    .stack_detail{
+                        @include stack-detail;
+                    }
+                    .contact_links{
+                        text-align: center;
+                        padding: 3rem;
+                        a{
+                            button{
+                                height: 100px;
+                                width: 100px;
+                                border-radius: 25px;
+                                font-size: 4rem;
+                                margin: 0.5rem 1rem;
+                                color: white;
+                                background: transparent;
+                                
+                            }
+                            .linkedin{
+                                animation: breath 8s ease-in-out infinite;
+                            }
+                            .email{
+                                animation: breath2 8s ease-in-out infinite;
+                            }
+                            // button::before{
+                            //     filter: blur(40px);
+                            //     // @include glow-icon;
+                            // }
+                            // button::after{
+                            //     // @include glow-icon;
+                            // }
+                            @keyframes breath {
+                                0% {
+                                    background: transparent;
+                                }
+                                50%{
+                                    background: rgba(14,118,168,1);
+                                    box-shadow: -10px -10px 15px rgba(14,118,168,0.7), 10px 10px 15px rgba(14,118,168,0.7);
+                                }
+                                100%{
+                                    background: transparent;
+                                }
+                            }
+                            @keyframes breath2 {
+                                0% {
+                                    background: transparent;
+                                }
+                                50%{
+                                    background: rgb(14, 168, 122);
+                                    box-shadow: -10px -10px 15px rgba(14, 168, 122, 0.7), 10px 10px 15px rgba(14, 168, 122, 0.7);
+                                }
+                                100%{
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+
                 }
             }
         }
@@ -359,6 +444,7 @@ html,body{
                 flex-direction: column;
                 min-height: calc(100vh - 120px);
                 align-items: center;
+                
             }
             
             #introduction{
@@ -400,6 +486,45 @@ html,body{
                     
                 }
             }
+            #aboutme{
+                article{
+                    width: 100%;
+                    .section_title{
+                        height: 40px;
+                        font-size: 0.8em;
+
+                    }
+                    .edu_stack{
+                        .stack_title{
+                            font-size: 1rem;
+                        }
+                        .stack_detail{
+                            font-size: 1.1rem;
+                        }
+                    }
+                    
+                }
+            }
+            #contactme{
+                article{
+                    width: 100%;
+                    .section_title{
+                        height: 40px;
+                        font-size: 0.8em;
+
+                    }
+                    .connect_stack{
+                        .stack_title{
+                            font-size: 1rem;
+                        }
+                        .stack_detail{
+                            font-size: 1.1rem;
+                        }
+                    }
+                    
+                }
+            }
+
             
         }
         footer{
@@ -463,6 +588,12 @@ html,body{
 
     }
 }
+@media (min-width: $breakpoint-tablet ) and (max-width: $breakpoint-desktop - 1 ) and (orientation: portrait) {
+    .container{
+        background: url('./assests/images/me-portrait.jpg');
+        background-size: cover;
+    }
+}
 @media (min-width: $breakpoint-desktop ) and (max-width: $breakpoint-desktop-large - 1 ) {
     .container{
         nav{
@@ -473,6 +604,55 @@ html,body{
             }
 
         }
+        .content{
+            margin: 0 25px;
+        }
 
     }
+}
+@media (min-width: $breakpoint-desktop ) and (max-width: $breakpoint-desktop-large - 1 ) and (orientation: portrait) {
+    .container{
+        background: url('./assests/images/me-portrait.jpg');
+        background-size: cover;
+    }
+}
+@media (min-width: $breakpoint-desktop-large){
+    .container{
+        nav{
+            grid-template-columns: 1fr 5fr 1fr;
+
+            .logo{
+                font-size: 1rem;
+            }
+
+        }
+
+        .content{
+            width: calc( 100vw - (13.85vw) );
+            justify-self: center;
+            margin: 0 25px;
+            #introduction{}
+            #skills{
+                article{
+                    width: 1300px;
+                }
+            }
+            #aboutme{
+                article{
+                    width: 1300px;
+                }
+            }
+            #contactme{
+                article{
+                    width: 1300px;
+                }
+            }
+        }
+        footer{
+            grid-template-columns: 1fr 5fr 1fr;
+            justify-items: center;
+        }
+
+    }
+    
 }
