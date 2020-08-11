@@ -87,6 +87,70 @@ html, body {
 
 .container nav .menu {
   font-size: 1.3rem;
+  padding: 10px;
+}
+
+.container aside::before {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.container aside {
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  width: 400px;
+  z-index: 2;
+  top: 100px;
+  left: calc(100vw - 400px);
+  height: calc(100vh - 100px);
+  color: #111111;
+  font-size: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container aside .blurry_back {
+  width: 100%;
+  position: relative;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.container aside .menu_items {
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: 'MontserratMedium', 'Helvetica', sans-serif;
+  font-size: 2rem;
+}
+
+.container aside .menu_items ul {
+  width: 100%;
+  list-style: none;
+  text-align: right;
+}
+
+.container aside .menu_items ul li {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+  border-width: 0px 0px 5px 5px;
+  border-style: solid;
+  border-color: #111111;
+  border-radius: 0px 0px 0px 20px;
+  -webkit-transition: background 0.7s;
+  transition: background 0.7s;
+}
+
+.container aside .menu_items ul li:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #111111;
+  text-align: center;
+  font-weight: bold;
 }
 
 .container .content {
@@ -314,13 +378,13 @@ html, body {
 }
 
 .container .content #contactme article .connect_stack .contact_links a .linkedin {
-  -webkit-animation: breath 8s ease-in-out infinite;
-          animation: breath 8s ease-in-out infinite;
+  -webkit-animation: breath 5s ease-in-out infinite;
+          animation: breath 5s ease-in-out infinite;
 }
 
 .container .content #contactme article .connect_stack .contact_links a .email {
-  -webkit-animation: breath2 8s ease-in-out infinite;
-          animation: breath2 8s ease-in-out infinite;
+  -webkit-animation: breath2 5s ease-in-out infinite;
+          animation: breath2 5s ease-in-out infinite;
 }
 
 @-webkit-keyframes breath {
@@ -465,13 +529,42 @@ html, body {
     font-size: 1.2rem;
   }
   .container .content #skills article .tech_stack .stack_title {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 1rem 0.1rem;
   }
   .container .content #skills article .tech_stack .frontend_stack .tech_item, .container .content #skills article .tech_stack .backend_stack .tech_item, .container .content #skills article .tech_stack .core_stack .tech_item {
     height: 70px;
     width: 70px;
     font-size: 1.5em;
+  }
+  .container .content #aboutme article .section_title {
+    font-size: 1.2rem;
+  }
+  .container .content #aboutme article .edu_stack .stack_title {
+    font-size: 0.7rem;
+    padding: 1rem 0.1rem;
+  }
+  .container .content #aboutme article .edu_stack .stack_detail {
+    font-size: 1rem;
+  }
+  .container .content #contactme article .section_title {
+    font-size: 1.2rem;
+  }
+  .container .content #contactme article .connect_stack .stack_title {
+    font-size: 0.7rem;
+    padding: 1rem 0.1rem;
+  }
+  .container .content #contactme article .connect_stack .stack_detail {
+    font-size: 1rem;
+  }
+  .container .content #contactme article .connect_stack .contact_links {
+    padding: 1rem;
+  }
+  .container .content #contactme article .connect_stack .contact_links a button {
+    width: 70px;
+    height: 70px;
+    font-size: 2.5rem;
+    border-radius: 10px;
   }
   .container footer {
     font-size: 0.7em;
@@ -572,6 +665,15 @@ html, body {
   .container .content #contactme article .connect_stack .stack_detail {
     font-size: 1.1rem;
   }
+  .container .content #contactme article .connect_stack .contact_links {
+    padding: 2rem;
+  }
+  .container .content #contactme article .connect_stack .contact_links a button {
+    width: 80px;
+    height: 80px;
+    font-size: 3rem;
+    border-radius: 15px;
+  }
   .container footer {
     font-size: 0.7em;
   }
@@ -656,9 +758,6 @@ html, body {
     font-size: 1rem;
   }
   .container .content {
-    width: calc( 100vw - (13.85vw));
-    -ms-grid-column-align: center;
-        justify-self: center;
     margin: 0 25px;
   }
   .container .content #skills article {
@@ -674,6 +773,10 @@ html, body {
     -ms-grid-columns: 1fr 5fr 1fr;
         grid-template-columns: 1fr 5fr 1fr;
     justify-items: center;
+  }
+  .container footer .scroll-indicator {
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
 }
 /*# sourceMappingURL=main.css.map */

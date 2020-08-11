@@ -118,9 +118,61 @@ html,body{
         }
         .menu{
             font-size: 1.3rem;
+            padding: 10px;
         }
     }
-
+    aside::before{
+        filter: blur(1px);
+    }
+    aside{
+        display: none;
+        position: absolute;
+        background: rgba($color: $secondary, $alpha: 0.1);
+        width: 400px;
+        z-index: 2;
+        top: 100px;
+        left: calc(100vw - 400px);
+        height: calc(100vh - 100px);
+        color: #111111;
+        font-size: 2rem;
+        align-items: center;
+        .blurry_back{
+            width: 100%;
+            position: relative;
+            filter: blur(1px);
+        }
+        .menu_items{
+            width: 100%;
+            position: absolute;
+            z-index: 3;
+            background-color: rgba(0, 0, 0, 0.1);
+            font-family: 'MontserratMedium', 'Helvetica', sans-serif;
+            font-size: 2rem;
+            ul{
+                width: 100%;
+                list-style: none;
+                text-align: right;
+                li{
+                    padding: 2rem;
+                    background: rgba(0,0,0,0.8);
+                    color: $secondary;
+                    margin-bottom: 0.8rem;
+                    border-width: 0px 0px 5px 5px;
+                    border-style: solid;
+                    border-color:  $primary;
+                    // box-shadow: -5px 0px 0px rgba(0,0,0,1), -5px 5px 0px rgba(0,0,0,1);
+                    border-radius: 0px 0px 0px 20px;
+                    transition: background 0.7s;
+                }
+                li:hover{
+                    background: rgba(255,255,255,0.8);
+                    color: $primary;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
     .content{
         margin: 0px 20px;
         overflow-y: scroll;
@@ -270,10 +322,10 @@ html,body{
                                 
                             }
                             .linkedin{
-                                animation: breath 8s ease-in-out infinite;
+                                animation: breath 5s ease-in-out infinite;
                             }
                             .email{
-                                animation: breath2 8s ease-in-out infinite;
+                                animation: breath2 5s ease-in-out infinite;
                             }
                             // button::before{
                             //     filter: blur(40px);
@@ -393,7 +445,7 @@ html,body{
                     }
                     .tech_stack{
                         .stack_title{
-                            font-size: 0.8rem;
+                            font-size: 0.7rem;
                             padding: 1rem 0.1rem;
                         }
                         .frontend_stack, .backend_stack, .core_stack{
@@ -406,6 +458,51 @@ html,body{
                     }
                 }
             }
+
+            #aboutme{
+                article{
+                    .section_title{
+                        font-size: 1.2rem;
+                    }
+                    .edu_stack{
+                        .stack_title{
+                            font-size: 0.7rem;
+                            padding: 1rem 0.1rem;
+                        }
+                        .stack_detail{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            #contactme{
+                article{
+                    .section_title{
+                        font-size: 1.2rem;
+                    }
+                    .connect_stack{
+                        .stack_title{
+                            font-size: 0.7rem;
+                            padding: 1rem 0.1rem;
+                        }
+                        .stack_detail{
+                            font-size: 1rem;
+                        }
+                        .contact_links{
+                            padding: 1rem;
+                            a{
+                                button{
+                                    width: 70px;
+                                    height: 70px;
+                                    font-size: 2.5rem;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
         }
         footer{
             font-size: 0.7em;
@@ -520,11 +617,21 @@ html,body{
                         .stack_detail{
                             font-size: 1.1rem;
                         }
+                        .contact_links{
+                            padding: 2rem;
+                            a{
+                                button{
+                                    width: 80px;
+                                    height: 80px;
+                                    font-size: 3rem;
+                                    border-radius: 15px;
+                                }
+                            }
+                        }
                     }
                     
                 }
             }
-
             
         }
         footer{
@@ -628,8 +735,8 @@ html,body{
         }
 
         .content{
-            width: calc( 100vw - (13.85vw) );
-            justify-self: center;
+            // width: calc( 100vw - (13.85vw) );
+            // justify-self: center;
             margin: 0 25px;
             #introduction{}
             #skills{
@@ -651,6 +758,10 @@ html,body{
         footer{
             grid-template-columns: 1fr 5fr 1fr;
             justify-items: center;
+            .scroll-indicator{
+                justify-self: end;
+            }
+
         }
 
     }
