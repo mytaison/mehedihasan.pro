@@ -78,6 +78,11 @@ html, body {
   font-size: 1.3rem;
 }
 
+.container nav .logo a, .container nav .logo a:focus, .container nav .logo a:visited, .container nav .logo a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .container nav .name {
   font-family: 'MontserratMedium','Helvetica','sans-serif';
   font-weight: bold;
@@ -90,6 +95,10 @@ html, body {
   padding: 10px;
 }
 
+.container nav .menu svg:hover, .container nav .menu svg:focus {
+  cursor: pointer;
+}
+
 .container aside::before {
   -webkit-filter: blur(1px);
           filter: blur(1px);
@@ -97,6 +106,7 @@ html, body {
 
 .container aside {
   display: none;
+  opacity: 0;
   position: absolute;
   background: rgba(255, 255, 255, 0.1);
   width: 400px;
@@ -109,6 +119,8 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .container aside .blurry_back {
@@ -153,10 +165,13 @@ html, body {
   font-weight: bold;
 }
 
+.container aside .menu_items ul li, .container aside .menu_items ul li:hover, .container aside .menu_items ul li:focus {
+  cursor: pointer;
+}
+
 .container .content {
   margin: 0px 20px;
   overflow-y: scroll;
-  scroll-behavior: smooth;
   font-size: 2rem;
 }
 
@@ -496,6 +511,20 @@ html, body {
   .container nav .menu {
     font-size: 1.3rem;
   }
+  .container aside {
+    background: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    z-index: 2;
+    left: calc(100vw - 100%);
+    font-size: 1.5rem;
+  }
+  .container aside .menu_items {
+    font-size: 1.5rem;
+  }
+  .container aside .menu_items ul li {
+    padding: 1rem;
+    margin-bottom: 0.6rem;
+  }
   .container .content {
     font-size: 2rem;
   }
@@ -594,6 +623,20 @@ html, body {
   }
   .container nav .menu {
     font-size: 1.3rem;
+  }
+  .container aside {
+    background: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    z-index: 2;
+    left: calc(100vw - 100%);
+    font-size: 1.5rem;
+  }
+  .container aside .menu_items {
+    font-size: 1.5rem;
+  }
+  .container aside .menu_items ul li {
+    padding: 1rem;
+    margin-bottom: 0.6rem;
   }
   .container .content {
     font-size: 2rem;
@@ -694,6 +737,17 @@ html, body {
     width: 70px;
     font-size: 1.4em;
   }
+  .container aside {
+    left: calc(100vw - 100%);
+    font-size: 1.4rem;
+  }
+  .container aside .menu_items {
+    font-size: 1.4rem;
+  }
+  .container aside .menu_items ul li {
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1365px) {
@@ -710,6 +764,17 @@ html, body {
   }
   .container nav .logo {
     font-size: 1rem;
+  }
+  .container aside {
+    background: rgba(255, 255, 255, 0.4);
+    font-size: 1.7rem;
+  }
+  .container aside .menu_items {
+    font-size: 1.7rem;
+  }
+  .container aside .menu_items ul li {
+    padding: 1rem;
+    margin-bottom: 0.7rem;
   }
   .container .content section {
     min-height: calc(100vh - 140px);
