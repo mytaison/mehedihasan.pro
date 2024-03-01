@@ -27,7 +27,7 @@ const ThemeSwitcher = ({ size }: { size?: number }) => {
     );
   }
   return (
-    <div>
+    <div className="themeswitch lg:pl-6">
       <ThemeToggleSwitch
         theme={resolvedTheme}
         setTheme={setTheme}

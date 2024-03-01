@@ -2,12 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .navlink:hover,
+  .navlink:focus {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  }
+
+  .navlink-dark:hover,
+  .navlink-dark:focus {
+    background: linear-gradient(145deg, #47476c, #252742);
+    box-shadow: 20px 20px 60px #1a1b30, -20px -20px 60px #424371;
+  }
+
+  .navmenu,
+  .navmenu-dark {
+    padding: 0.7em 0.7em;
+    font-size: 18px;
+    transition: all 0.3s;
+    animation: moveInButtom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+  .navmenu {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  }
+
+  .navmenu-dark {
+    background: linear-gradient(145deg, #4d4d7a, #0d0d3c);
+    box-shadow: 20px 20px 60px #19192c, -20px -20px 60px #42426d;
+  }
+  .navmenu:hover,
+  .navmenu-dark:hover {
+    transform: translateY(-3px);
+  }
+  .navmenu:active {
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  }
+  .navmenu-dark:active {
+    box-shadow: inset 4px 4px 12px #19192c, inset -4px -4px 12px #42426d !important;
+  }
+}
+@layer utilities {
+  .bg-dark {
+    background: linear-gradient(145deg, #202038, #252742);
+  }
 }
