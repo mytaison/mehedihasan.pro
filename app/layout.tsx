@@ -1,10 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import ThemeSwitcher from "./ui/components/shared/ThemeSwitcher";
+import Navbar from "./ui/components/navbar/Navbar";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+// Font files can be colocated inside of `app`
+const mudhoney = localFont({
+  src: [
+    {
+      path: "../public/fonts/MudHoney.ttf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-mudhoney",
+});
+
+const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,9 +31,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body
+        className={`${roboto.className} ${mudhoney.variable} border-box bg-white-400 dark:bg-dark  w-full h-full`}
+      >
         <Providers>
-          <ThemeSwitcher></ThemeSwitcher>
+          <Navbar></Navbar>
           {children}
         </Providers>
       </body>
