@@ -56,10 +56,20 @@ const config: Config = {
             maskPosition: "0%",
           },
         },
+        slideInFromLeft: {
+          "0%": {
+            transform: "translateX(-1000px)",
+          },
+          "100%": {
+            transform: "translateX(0px)",
+          },
+        },
       },
       animation: {
-        opacityOnload: "opacityOnload 1500ms ease-in-out 0ms",
+        opacityOnload: "opacityOnload 1.5s ease-in-out 0ms",
         revealOnload: "revealOnload 5s linear 100ms",
+        slideInFromLeft:
+          "slideInFromLeft 1s cubic-bezier(0.42, 0, 0.53, 1.2) 0ms",
       },
     },
   },

@@ -36,7 +36,7 @@ export default function RootLayout({
       >
         <Providers>
           <Navbar></Navbar>
-          <main>{children}</main>
+          <main className="scroll-smooth md:scroll-auto">{children}</main>
         </Providers>
       </body>
     </html>

@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section id="home" className="container mx-auto">
       <div className="p-4 pt-[102px] md:pt-20 md:pb-0 min-h-[100dvh] flex flex-col items-center justify-center">
-        <div className="rounded-xl flex flex-col md:flex-row gap-10 items-center justify-center">
+        <div className="rounded-xl flex flex-col md:flex-row gap-10 md:p-10 items-center justify-center">
           <div className="w-3/5 md:w-3/6 p-4 md:p-10 lg:p-16 rounded-full flex items-center justify-center neumorph-concave dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
             <Image src={developerImg} alt={"Developer Image"}></Image>
           </div>

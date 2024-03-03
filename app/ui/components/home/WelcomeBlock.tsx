@@ -27,7 +27,7 @@ export function WelcomeBlock() {
         <TextGenerateEffect words={words} />
         <TextGenerateEffect
           words={words2}
-          className="font-mudhoney md:text-3xl lg:text-4xl xl:text-6xl  py-2 md:py-3 tracking-[0.2em]"
+          className="font-mudhoney md:text-3xl lg:text-4xl xl:text-6xl md:py-3 tracking-[0.2em]"
           animationDelay={true}
           delay={2}
           tracking="0.2em"
