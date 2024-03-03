@@ -32,11 +32,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${roboto.className} ${mudhoney.variable} border-box bg-white-400 dark:bg-dark  w-full h-full`}
+        className={`${roboto.className} ${mudhoney.variable} relative border-box bg-w bg-white dark:bg-dark  w-full h-full`}
       >
         <Providers>
           <Navbar></Navbar>
-          {children}
+          <main>{children}</main>
         </Providers>
       </body>
     </html>

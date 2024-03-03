@@ -1,3 +1,4 @@
+import plugin from "tailwindcss";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -35,6 +36,30 @@ const config: Config = {
     extend: {
       fontFamily: {
         mudhoney: ["var(--font-mudhoney)"],
+      },
+      keyframes: {
+        opacityOnload: {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
+        revealOnload: {
+          "0%": {
+            opacity: "1",
+            maskPosition: "100%",
+          },
+          "100%": {
+            opacity: "1",
+            maskPosition: "0%",
+          },
+        },
+      },
+      animation: {
+        opacityOnload: "opacityOnload 1500ms ease-in-out 0ms",
+        revealOnload: "revealOnload 5s linear 100ms",
       },
     },
   },

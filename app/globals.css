@@ -23,12 +23,12 @@
     animation: moveInButtom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
   }
-  .navmenu {
+  .navmenu:hover {
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
     box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
   }
 
-  .navmenu-dark {
+  .navmenu-dark:hover {
     background: linear-gradient(145deg, #4d4d7a, #0d0d3c);
     box-shadow: 20px 20px 60px #19192c, -20px -20px 60px #42426d;
   }
@@ -46,5 +46,40 @@
 @layer utilities {
   .bg-dark {
     background: linear-gradient(145deg, #202038, #252742);
+  }
+
+  .neumorph-concave {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  }
+  .neumorph-concave-dark {
+    background: linear-gradient(145deg, #434572, #1d1f2b);
+    box-shadow: 20px 20px 60px #19192c, -20px -20px 60px #383a5e;
+  }
+  .neumorph-convex {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  }
+  .neumorph-convex-dark {
+    background: linear-gradient(145deg, #434572, #1d1f2b);
+    box-shadow: 20px 20px 60px #19192c, -20px -20px 60px #383a5e;
+  }
+  .neumorph-pressed {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  }
+  .neumorph-pressed-dark {
+    background: #6a6aa7;
+    box-shadow: inset 20px 20px 60px #19192c, inset -20px -20px 60px #383a5e;
+  }
+  .text-wipe {
+    mask-image: linear-gradient(to left, rgba(255, 255, 255, 0) 75%, #000 75%);
+    -webkit-mask-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0) 75%,
+      #000 75%
+    );
+    mask-size: 500%;
+    -webkit-mask-size: 500%;
   }
 }

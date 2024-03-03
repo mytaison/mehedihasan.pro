@@ -1,5 +1,10 @@
-import Image from "next/image";
+import Home from "./ui/components/home/Home";
 
-export default function Home() {
-  // return <h1>Home</h1>;
+export default function Page() {
+  return (
+    <>
+      <Home></Home>
+      <Home></Home>
+    </>
+  );
 }
