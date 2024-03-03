@@ -23,9 +23,12 @@ const Navbar = () => {
           </div>
           {/* NAVLINKS AND THEME SWITCH */}
           <div
-            className={`links-and-themeswitch ${
-              showMobNav ? "flex" : "hidden"
-            } flex-col-reverse lg:flex lg:flex-row justify-center items-center w-full lg:w-11/12 h-[calc(100dvh-100px)] lg:h-[45px]`}
+            className={`links-and-themeswitch transition-all ${
+              showMobNav
+                ? "flex animate-slideInFromLeft"
+                : " hidden -translate-x-[1000px]"
+            }
+            md:translate-x-0 flex-col-reverse lg:flex lg:flex-row justify-center items-center w-full lg:w-11/12 h-[calc(100dvh-100px)] lg:h-[45px]`}
           >
             <div
               className={`links flex flex-col lg:flex-row justify-center items-center text-center p-10 w-full lg:w-10/12 gap-6 xl:gap-10 text-2xl lg:text-[1rem]`}
