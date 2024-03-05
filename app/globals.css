@@ -47,12 +47,20 @@
   .bg-dark {
     background: linear-gradient(145deg, #202038, #252742);
   }
+  .neumorph-flat {
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  }
+  .neumorph-flat-dark {
+    background: #434572;
+    box-shadow: 20px 20px 60px #19192c, -20px -20px 60px #383a5e;
+  }
   .neumorph-concave {
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
     box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
   }
   .neumorph-concave-dark {
-    background: linear-gradient(145deg, #434572, #1d1f2b);
+    background: linear-gradient(145deg, #434572, #24253f);
     box-shadow: 20px 20px 60px #19192c, -20px -20px 60px #383a5e;
   }
   .neumorph-convex {
@@ -60,16 +68,47 @@
     box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
   }
   .neumorph-convex-dark {
-    background: linear-gradient(145deg, #434572, #1d1f2b);
+    background: linear-gradient(145deg, #434572, #24253f);
     box-shadow: 20px 20px 60px #19192c, -20px -20px 60px #383a5e;
   }
   .neumorph-pressed {
-    background: linear-gradient(145deg, #ffffff, #e6e6e6);
-    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    background: #ffffff;
+    box-shadow: inset 20px 20px 60px #d9d9d9, inset -20px -20px 60px #ffffff;
   }
   .neumorph-pressed-dark {
-    background: #6a6aa7;
+    background: #434572;
     box-shadow: inset 20px 20px 60px #19192c, inset -20px -20px 60px #383a5e;
+  }
+  .neumorph-tablets {
+    background: #ffffff;
+    box-shadow: -10px 15px rgba(255, 255, 255, 0.12),
+      10px 10px 15px rgba(70, 70, 70, 0.5),
+      inset 10px -10px 15px rgba(255, 255, 255, 0.12),
+      inset 10px 10px 15px rgba(70, 70, 70, 0.5);
+  }
+  .neumorph-tablets-dark {
+    background: rgb(67, 69, 114);
+    box-shadow: -10px 15px rgba(67, 69, 114, 0.12),
+      10px 10px 15px rgba(25, 25, 44, 0.5),
+      inset 10px -10px 15px rgba(67, 69, 114, 0.12),
+      inset 10px 10px 15px rgba(25, 25, 44, 0.5);
+  }
+  .bgimg-linear-gradient {
+    background: linear-gradient(
+      135deg,
+      #654f75 0%,
+      #e03772 45%,
+      #aa5c58 77%,
+      #7e5671 100%
+    );
+  }
+  .profile-pic-stroke::before {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.76rem;
+    mix-blend-mode: screen;
   }
   .text-wipe {
     mask-image: linear-gradient(to left, rgba(255, 255, 255, 0) 75%, #000 75%);
