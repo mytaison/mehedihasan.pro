@@ -24,14 +24,16 @@ const About = () => {
                   EXPERIENCE
                 </span>
               </h3>
-              <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
+              <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
                 <p className="text-gray-700 dark:text-gray-200">
                   <span className="font-semibold text-lg">
                     5+ Years of Industry Experience
                   </span>
-                  <br />
+                </p>
+                <p className="text-gray-700 dark:text-gray-200">
                   Stitel Networks LLC, Tempe, AZ, US
-                  <br />
+                </p>
+                <p className="text-gray-700 dark:text-gray-200">
                   BroTecs Technologies Ltd Dhaka, BD
                 </p>
               </div>
@@ -43,18 +45,18 @@ const About = () => {
                   EDUCATION
                 </span>
               </h3>
-              <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
+              <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
                 <p className="text-gray-700 dark:text-gray-200">
                   <span className="font-semibold text-lg">
                     MSc in Computer Science & Engineering
                   </span>
-                  <br />
+                </p>
+                <p className="text-gray-700 dark:text-gray-200">
                   <span className="font-semibold text-lg">
                     BSc in Computer Science & Engineering
                   </span>
-                  <br />
-                  North South University, Dhaka, BD
                 </p>
+                <p>North South University, Dhaka, BD</p>
               </div>
             </div>
             <div id="certificationBlock" className=" flex-1">
@@ -64,16 +66,18 @@ const About = () => {
                   CERTIFICATION
                 </span>
               </h3>
-              <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
+              <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
                 <p className="text-gray-700 dark:text-gray-200">
                   <span className="font-semibold text-lg">
                     AWS Certified Cloud Practioner(CCP)
                   </span>
-                  <br />
+                </p>
+                <p className="text-gray-700 dark:text-gray-200">
                   <span className="font-semibold text-lg">
                     Certified Scrum Master(CSM<sup>®</sup>)
                   </span>
-                  <br />
+                </p>
+                <p className="text-gray-700 dark:text-gray-200">
                   <span className="font-semibold text-lg">
                     Certified Scrum Developer(CSD<sup>®</sup>)
                   </span>
