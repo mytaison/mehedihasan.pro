@@ -33,11 +33,11 @@ const Navbar = () => {
             <div
               className={`links flex flex-col lg:flex-row justify-center items-center text-center p-10 w-full lg:w-10/12 gap-6 xl:gap-10 text-2xl lg:text-[1rem]`}
             >
-              <NavLink href="#about" label="ABOUT" />
-              <NavLink href="#skills" label="SKILLS" />
-              <NavLink href="#projects" label="PROJECTS" />
-              <NavLink href="#contact" label="CONTACT" />
-              <NavLink href="#blog" label="BLOG" />
+              <NavLink href="/#about" label="ABOUT" />
+              <NavLink href="/#skills" label="SKILLS" />
+              <NavLink href="/#projects" label="PROJECTS" />
+              <NavLink href="/#contact" label="CONTACT" />
+              <NavLink href="/#blog" label="BLOG" />
             </div>
             <ThemeSwitcher size={10}></ThemeSwitcher>
           </div>
