@@ -22,13 +22,13 @@ const Skills = () => {
   return (
     <section id="skills" className="container mx-auto">
       <div className="w-full p-4 md:pt-[102px] min-h-[100dvh] flex flex-col gap-16 lg:gap-8">
-        <div className="xl:pt-5 2xl:pt-1">
+        <div className="xl:pt-5 2xl:pt-10">
           <h1 className="text-3xl tracking-widest">SKILLS</h1>
           <h5 className="">Take a look!</h5>
         </div>
         <div className="flex flex-col md:flex-row gap-4 lg:gap-8 w-full">
           {/* ABOUT DETAILS BOXES */}
-          <div className="skills w-full lg:w-4/6 flex flex-1 flex-col md:flex-row flex-wrap gap-16 lg:gap-8">
+          <div className="skills w-full lg:w-4/6 flex flex-1 flex-col lg:grid flex-wrap gap-16 lg:gap-8">
             <div id="frontendSkillsBlock" className="flex-1">
               <h3 className="font-roboto font-bold text-gray-950 dark:text-gray-50 tracking-[.2em] text-xl mb-2">
                 <span className="inline-flex justify-center items-center gap-2">
@@ -37,7 +37,7 @@ const Skills = () => {
                 </span>
               </h3>
               <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
-                <div className="text-gray-700 dark:text-gray-200 w-full flex flex-col md:flex-row gap-2 justify-between">
+                <div className="text-gray-700 dark:text-gray-200 w-full flex flex-wrap lg:flex-nowrap gap-2 justify-center lg:justify-between">
                   <div className={iconStyle}>
                     <FaHtml5 size={60} />
                   </div>
@@ -70,7 +70,7 @@ const Skills = () => {
                 </span>
               </h3>
               <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
-                <div className="text-gray-700 dark:text-gray-200 w-full flex flex-col md:flex-row gap-2 justify-between">
+                <div className="text-gray-700 dark:text-gray-200 w-full flex flex-wrap lg:flex-nowrap gap-2 justify-center lg:justify-between">
                   <div className={iconStyle}>
                     <DiPhp size={60} />
                   </div>
@@ -103,7 +103,7 @@ const Skills = () => {
                 </span>
               </h3>
               <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
-                <div className="text-gray-700 dark:text-gray-200 w-full flex flex-col md:flex-row gap-12 justify-center">
+                <div className="text-gray-700 dark:text-gray-200 w-full flex flex-wrap lg:flex-nowrap gap-2 lg:gap-12 justify-center">
                   <div className={iconStyle}>
                     <IoLogoPython size={60} />
                   </div>
