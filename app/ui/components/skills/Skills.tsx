@@ -21,7 +21,7 @@ const Skills = () => {
     "neumorph-tablets dark:neumorph-tablets-dark rounded-full w-[100px] h-[100px] flex items-center justify-center";
   return (
     <section id="skills" className="container mx-auto">
-      <div className="w-full p-4 md:pt-[102px] min-h-[100dvh] flex flex-col gap-16 lg:gap-8">
+      <div className="w-full p-4 mt-[102px] md:pt-[102px] md:mt-0 min-h-[calc(100dvh-87.19px)] lg:min-h-[calc(100dvh-102px)] flex flex-col gap-16 lg:gap-8">
         <div className="xl:pt-5 2xl:pt-10">
           <h1 className="text-3xl tracking-widest">SKILLS</h1>
           <h5 className="">Take a look!</h5>
@@ -37,7 +37,7 @@ const Skills = () => {
                 </span>
               </h3>
               <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
-                <div className="text-gray-700 dark:text-gray-200 w-full flex flex-wrap lg:flex-nowrap gap-2 justify-center lg:justify-between">
+                <div className="text-gray-900 dark:text-gray-200 w-full flex flex-wrap lg:flex-nowrap gap-6 lg:gap-2 justify-center lg:justify-between">
                   <div className={iconStyle}>
                     <FaHtml5 size={60} />
                   </div>
@@ -70,7 +70,7 @@ const Skills = () => {
                 </span>
               </h3>
               <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
-                <div className="text-gray-700 dark:text-gray-200 w-full flex flex-wrap lg:flex-nowrap gap-2 justify-center lg:justify-between">
+                <div className="text-gray-900 dark:text-gray-200 w-full flex flex-wrap lg:flex-nowrap gap-6 lg:gap-2 justify-center lg:justify-between">
                   <div className={iconStyle}>
                     <DiPhp size={60} />
                   </div>
@@ -103,7 +103,7 @@ const Skills = () => {
                 </span>
               </h3>
               <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
-                <div className="text-gray-700 dark:text-gray-200 w-full flex flex-wrap lg:flex-nowrap gap-2 lg:gap-12 justify-center">
+                <div className="text-gray-900 dark:text-gray-200 w-full flex flex-wrap lg:flex-nowrap gap-6 lg:gap-12 justify-center">
                   <div className={iconStyle}>
                     <IoLogoPython size={60} />
                   </div>
