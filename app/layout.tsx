@@ -34,8 +34,9 @@ export default function RootLayout({
         className={`${roboto.className} ${mudhoney.variable} relative border-box bg-w bg-white dark:bg-dark  w-full h-full`}
       >
         <Providers>
-          <Navbar></Navbar>
-          <main className="scroll-smooth md:scroll-auto">{children}</main>
+          <main className="scroll-smooth md:scroll-auto flex flex-col gap-10 ">
+            {children}
+          </main>
         </Providers>
       </body>
     </html>

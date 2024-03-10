@@ -42,6 +42,39 @@
   .navmenu-dark:active {
     box-shadow: inset 4px 4px 12px #19192c, inset -4px -4px 12px #42426d !important;
   }
+  .form__input {
+  }
+  .form__label {
+    transition: all 0.3s;
+    display: block;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 0 0rem 1.4rem 0.6rem;
+  }
+  .form__input {
+    padding: 0.5rem;
+    border: none;
+    background: #2425407d;
+    box-shadow: none;
+    outline: none;
+    transform: all ease 1s;
+  }
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-1rem);
+  }
+  .form__input:active,
+  .form__input:focus {
+    border-bottom: 2px solid #212121 !important;
+  }
+  .dark .form__input:active,
+  .dark .form__input:focus {
+    border-bottom: 2px solid #fde047 !important;
+  }
+  .form__input:placeholder-shown {
+    border-bottom: 0;
+  }
 }
 @layer utilities {
   .bg-dark {
@@ -92,6 +125,22 @@
       10px 10px 15px rgba(25, 25, 44, 0.5),
       inset 10px -10px 15px rgba(67, 69, 114, 0.12),
       inset 10px 10px 15px rgba(25, 25, 44, 0.5);
+  }
+  .neumorph-pressed-error {
+    background: #f64e4e;
+    box-shadow: inset 20px 20px 60px #ff6060, inset -20px -20px 60px #d30000;
+  }
+  .neumorph-pressed-error-dark {
+    background: #ff5252;
+    box-shadow: inset 20px 20px 60px #680000, inset -20px -20px 60px #ed0404;
+  }
+  .neumorph-pressed-success {
+    background: #3efb8e;
+    box-shadow: inset 20px 20px 60px #3be66f, inset -20px -20px 60px #004e1b;
+  }
+  .neumorph-pressed-success-dark {
+    background: #52ffae;
+    box-shadow: inset 20px 20px 60px #00683a, inset -20px -20px 60px #032114;
   }
   .bgimg-linear-gradient {
     background: linear-gradient(

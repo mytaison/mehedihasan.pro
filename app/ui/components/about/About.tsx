@@ -8,7 +8,7 @@ import mehediHasanPic from "@/public/images/Me1.png";
 const About = () => {
   return (
     <section id="about" className="container mx-auto">
-      <div className="w-full p-4 md:pt-[102px] min-h-[100dvh] flex flex-col gap-16 lg:gap-8 2xl:gap-16">
+      <div className="w-full p-4 mt-[102px] md:pt-[102px] md:mt-0 min-h-[100dvh] flex flex-col gap-16 lg:gap-8 2xl:gap-16">
         <div className="xl:pt-5 2xl:pt-10">
           <h1 className="text-3xl tracking-widest">ABOUT ME</h1>
           <h5 className="">Details on me</h5>
@@ -16,7 +16,7 @@ const About = () => {
 
         <div className="flex flex-col md:flex-row gap-4 lg:gap-8 w-full">
           {/* ABOUT DETAILS BOXES */}
-          <div className="aboutDetails w-full lg:w-4/6 flex flex-1 flex-col md:flex-row flex-wrap gap-16 lg:gap-8">
+          <div className="aboutDetails w-full lg:w-4/6 flex flex-1 flex-col md:flex-row flex-wrap gap-16 md:gap-6 lg:gap-8">
             <div id="experienceBlock" className="flex-1">
               <h3 className="font-roboto font-bold text-gray-950 dark:text-gray-50 tracking-[.2em] text-xl mb-2">
                 <span className="inline-flex justify-center items-center gap-2">
@@ -24,7 +24,7 @@ const About = () => {
                   EXPERIENCE
                 </span>
               </h3>
-              <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
+              <div className="md:min-h-[256px] xl:min-h-[216px] p-4 md:p-6 lg:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-flat dark:neumorph-flat-dark md:justify-between animate-opacityOnload">
                 <p className="text-gray-700 dark:text-gray-200">
                   <span className="font-semibold text-lg">
                     5+ Years of Industry Experience
@@ -45,7 +45,7 @@ const About = () => {
                   EDUCATION
                 </span>
               </h3>
-              <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
+              <div className="md:min-h-[256px] xl:min-h-[216px] p-4 md:p-6 lg:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-flat dark:neumorph-flat-dark md:justify-between animate-opacityOnload">
                 <p className="text-gray-700 dark:text-gray-200">
                   <span className="font-semibold text-lg">
                     MSc in Computer Science & Engineering
@@ -66,20 +66,20 @@ const About = () => {
                   CERTIFICATION
                 </span>
               </h3>
-              <div className="md:min-h-[250px] xl:min-h-[216px] p-4 md:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
+              <div className="md:min-h-[256px] xl:min-h-[216px] p-4 md:p-6 lg:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-flat dark:neumorph-flat-dark md:justify-between animate-opacityOnload">
                 <p className="text-gray-700 dark:text-gray-200">
                   <span className="font-semibold text-lg">
-                    AWS Certified Cloud Practioner(CCP)
+                    AWS Certified Cloud Practioner (CCP)
                   </span>
                 </p>
                 <p className="text-gray-700 dark:text-gray-200">
                   <span className="font-semibold text-lg">
-                    Certified Scrum Master(CSM<sup>®</sup>)
+                    Certified Scrum Master (CSM<sup>®</sup>)
                   </span>
                 </p>
                 <p className="text-gray-700 dark:text-gray-200">
                   <span className="font-semibold text-lg">
-                    Certified Scrum Developer(CSD<sup>®</sup>)
+                    Certified Scrum Developer (CSD<sup>®</sup>)
                   </span>
                 </p>
               </div>
@@ -100,7 +100,7 @@ const About = () => {
           </div>
           {/* ABOUT DETAILS PASSAGE*/}
           <div id="detailBlock" className="w-full lg:w-4/6 flex-nowrap">
-            <div className="md:min-h-[250px] xl:min-h-[300px] p-4 md:p-10 rounded-xl flex items-center justify-center neumorph-flat dark:neumorph-flat-dark md:justify-between animate-opacityOnload">
+            <div className="md:min-h-[250px] xl:min-h-[300px] p-4 md:p-10 rounded-xl flex items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
               <p className="text-gray-700 dark:text-gray-200">
                 Through out my career as a software engineer, I have played
                 pivotal role in developing robust and secure solutions with

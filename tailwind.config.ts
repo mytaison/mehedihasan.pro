@@ -64,12 +64,48 @@ const config: Config = {
             transform: "translateX(0px)",
           },
         },
+        fly: {
+          from: {
+            transform: "translateY(0.1em)",
+          },
+          to: {
+            transform: "translateY(-0.1em)",
+          },
+        },
+        breath1: {
+          "0%": {
+            background: "transparent",
+          },
+          "50%": {
+            background: "#0ea87a",
+            boxShadow:
+              "-10px -10px 15px rgba(14, 168, 122, 0.7), 10px 10px 15px rgba(14, 168, 122, 0.7)",
+          },
+          "100%": {
+            background: "transparent",
+          },
+        },
+        breath2: {
+          "0%": {
+            background: "transparent",
+          },
+          "50%": {
+            background: "#0e76a8",
+            boxShadow:
+              "-10px -10px 15px rgba(14, 118, 168, 0.7), 10px 10px 15px rgba(14, 118, 168, 0.7)",
+          },
+          "100%": {
+            background: "transparent",
+          },
+        },
       },
       animation: {
         opacityOnload: "opacityOnload 1.5s ease-in-out 0ms",
         revealOnload: "revealOnload 5s linear 100ms",
         slideInFromLeft:
           "slideInFromLeft 1s cubic-bezier(0.42, 0, 0.53, 1.2) 0ms",
+        breath1: "breath1 5s ease-in-out infinite",
+        breath2: "breath2 5s ease-in-out infinite",
       },
     },
   },
