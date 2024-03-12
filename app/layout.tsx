@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
-import Navbar from "./ui/components/navbar/Navbar";
 import localFont from "next/font/local";
 
 // Font files can be colocated inside of `app`

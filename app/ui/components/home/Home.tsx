@@ -1,6 +1,7 @@
 import Image from "next/image";
 import developerImg from "@/public/images/developer.png";
 import { WelcomeBlock } from "./WelcomeBlock";
+import ResumeDownload from "./ResumeDownload";
 const Home = () => {
   return (
     <section id="home" className="container mx-auto">
@@ -13,8 +14,9 @@ const Home = () => {
               priority={true}
             ></Image>
           </div>
-          <div className="w-full md:w-3/6 flex">
+          <div className="w-full md:w-3/6 flex flex-col">
             <WelcomeBlock></WelcomeBlock>
+            <ResumeDownload></ResumeDownload>
           </div>
         </div>
       </div>

@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+* {
+  font-synthesis: none !important;
+}
 @layer components {
   .navlink:hover,
   .navlink:focus {
@@ -42,8 +44,7 @@
   .navmenu-dark:active {
     box-shadow: inset 4px 4px 12px #19192c, inset -4px -4px 12px #42426d !important;
   }
-  .form__input {
-  }
+
   .form__label {
     transition: all 0.3s;
     display: block;

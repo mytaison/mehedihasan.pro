@@ -6,6 +6,7 @@ import Image from "next/image";
 import mehediHasanPic from "@/public/images/Me1.png";
 
 const About = () => {
+  const stylePTags = "text-gray-800 dark:text-gray-200 text-center";
   return (
     <section id="about" className="container mx-auto">
       <div className="w-full p-4 mt-[102px] md:pt-[102px] md:mt-0 min-h-[100dvh] flex flex-col gap-16 lg:gap-8 2xl:gap-16">
@@ -24,18 +25,14 @@ const About = () => {
                   EXPERIENCE
                 </span>
               </h3>
-              <div className="md:min-h-[256px] xl:min-h-[216px] p-4 md:p-6 lg:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-flat dark:neumorph-flat-dark md:justify-between animate-opacityOnload">
-                <p className="text-gray-700 dark:text-gray-200">
+              <div className="md:min-h-[256px] xl:min-h-[232px] p-4 md:p-6 lg:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-flat dark:neumorph-flat-dark md:justify-between animate-opacityOnload">
+                <p className={stylePTags}>
                   <span className="font-semibold text-lg">
                     5+ Years of Industry Experience
                   </span>
                 </p>
-                <p className="text-gray-700 dark:text-gray-200">
-                  Stitel Networks LLC, Tempe, AZ, US
-                </p>
-                <p className="text-gray-700 dark:text-gray-200">
-                  BroTecs Technologies Ltd Dhaka, BD
-                </p>
+                <p className={stylePTags}>Stitel Networks LLC, Tempe, AZ, US</p>
+                <p className={stylePTags}>BroTecs Technologies Ltd Dhaka, BD</p>
               </div>
             </div>
             <div id="educationBlock" className=" flex-1">
@@ -45,13 +42,13 @@ const About = () => {
                   EDUCATION
                 </span>
               </h3>
-              <div className="md:min-h-[256px] xl:min-h-[216px] p-4 md:p-6 lg:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-flat dark:neumorph-flat-dark md:justify-between animate-opacityOnload">
-                <p className="text-gray-700 dark:text-gray-200">
+              <div className="md:min-h-[256px] xl:min-h-[232px] p-4 md:p-6 lg:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-flat dark:neumorph-flat-dark md:justify-between animate-opacityOnload">
+                <p className={stylePTags}>
                   <span className="font-semibold text-lg">
                     MSc in Computer Science & Engineering
                   </span>
                 </p>
-                <p className="text-gray-700 dark:text-gray-200">
+                <p className={stylePTags}>
                   <span className="font-semibold text-lg">
                     BSc in Computer Science & Engineering
                   </span>
@@ -66,18 +63,18 @@ const About = () => {
                   CERTIFICATION
                 </span>
               </h3>
-              <div className="md:min-h-[256px] xl:min-h-[216px] p-4 md:p-6 lg:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-flat dark:neumorph-flat-dark md:justify-between animate-opacityOnload">
-                <p className="text-gray-700 dark:text-gray-200">
+              <div className="md:min-h-[256px] xl:min-h-[232px] p-4 md:p-6 lg:p-10 rounded-xl flex flex-col gap-2 items-center justify-center neumorph-flat dark:neumorph-flat-dark md:justify-between animate-opacityOnload">
+                <p className={stylePTags}>
                   <span className="font-semibold text-lg">
                     AWS Certified Cloud Practioner (CCP)
                   </span>
                 </p>
-                <p className="text-gray-700 dark:text-gray-200">
+                <p className={stylePTags}>
                   <span className="font-semibold text-lg">
                     Certified Scrum Master (CSM<sup>®</sup>)
                   </span>
                 </p>
-                <p className="text-gray-700 dark:text-gray-200">
+                <p className={stylePTags}>
                   <span className="font-semibold text-lg">
                     Certified Scrum Developer (CSD<sup>®</sup>)
                   </span>
@@ -101,7 +98,7 @@ const About = () => {
           {/* ABOUT DETAILS PASSAGE*/}
           <div id="detailBlock" className="w-full lg:w-4/6 flex-nowrap">
             <div className="md:min-h-[250px] xl:min-h-[300px] p-4 md:p-10 rounded-xl flex items-center justify-center neumorph-convex dark:neumorph-convex-dark md:justify-between animate-opacityOnload">
-              <p className="text-gray-700 dark:text-gray-200">
+              <p className="text-gray-800 dark:text-gray-200">
                 Through out my career as a software engineer, I have played
                 pivotal role in developing robust and secure solutions with
                 BroTecs Technologies and Stitel Networks. My contributions
