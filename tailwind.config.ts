@@ -46,6 +46,17 @@ const config: Config = {
             opacity: "1",
           },
         },
+        opacityOnloadDelayed: {
+          "0%": {
+            opacity: "0",
+          },
+          "70%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
         revealOnload: {
           "0%": {
             opacity: "1",
@@ -101,6 +112,8 @@ const config: Config = {
       },
       animation: {
         opacityOnload: "opacityOnload 1.5s ease-in-out 0ms",
+        opacityOnload5s:
+          "opacityOnloadDelayed 5s cubic-bezier(1, -0.01, 0.86, 1.01) 0ms",
         revealOnload: "revealOnload 5s linear 100ms",
         slideInFromLeft:
           "slideInFromLeft 1s cubic-bezier(0.42, 0, 0.53, 1.2) 0ms",
