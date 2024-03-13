@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedinIn, FaRegEnvelope, FaSkype } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaRegEnvelope, FaSkype } from "react-icons/fa";
 
 const ConnectBlock = () => {
   const btnStyle =
@@ -23,6 +23,11 @@ const ConnectBlock = () => {
       <a href="skype:live:mytaison?add">
         <button className={`skype ${btnStyle}`}>
           <FaSkype size={50} />
+        </button>
+      </a>
+      <a target="_blank" href="https://github.com/mytaison">
+        <button className={`github ${btnStyle}`}>
+          <FaGithub size={50} />
         </button>
       </a>
     </div>

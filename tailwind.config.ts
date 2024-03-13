@@ -109,6 +109,13 @@ const config: Config = {
             background: "transparent",
           },
         },
+        visibleWithBlur: {
+          to: {
+            opacity: "1",
+            blur: "0",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         opacityOnload: "opacityOnload 1.5s ease-in-out 0ms",
@@ -119,6 +126,7 @@ const config: Config = {
           "slideInFromLeft 1s cubic-bezier(0.42, 0, 0.53, 1.2) 0ms",
         breath1: "breath1 5s ease-in-out infinite",
         breath2: "breath2 5s ease-in-out infinite",
+        visibleWithBlur: "visibleWithBlur 0.5s 1s linear 1 forwards",
       },
     },
   },
