@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import Button from "../shared/Button";
+import { FaGithub } from "react-icons/fa";
 
 export type ProjectDetails = {
   title: string;
@@ -28,8 +29,8 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         className="w-full h-full object-cover"
         priority={false}
       ></Image>
-      <div className="content absolute w-full h-full top-0 left-0 p-10 md:pt-24 bg-black/80 dark:bg-[#23243d]/80 box-border translate-x-[0px] text-white flex flex-col gap-1 lg:gap-4">
-        <div className="projectTitle relative font-bold tracking-wide md:tracking-[14px] text-xl md:text-[3.2rem] z-10">
+      <div className="content absolute w-full h-full top-0 left-0 p-8 pt-12 md:p-10 md:pt-24 bg-black/80 dark:bg-[#23243d]/80 box-border translate-x-[0px] text-white flex flex-col gap-1 md:gap-2 lg:gap-4">
+        <div className="projectTitle relative font-bold tracking-wide md:tracking-[14px] text-xl md:text-5xl z-10">
           {details.title.toUpperCase()}
         </div>
         <div className="projectCategory relative font-bold tracking-wide md:tracking-widest text-lg md:text-xl text-blue-400 dark:text-yellow-400 z-10">
@@ -45,6 +46,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         <div className="projectButtons grid grid-cols-[repeat(2,130px)]">
           <Button
             label={"Github"}
+            labelIcon={FaGithub}
             anchor={details.gitLink}
             className="projectGit"
             themeBg={true}

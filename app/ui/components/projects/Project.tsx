@@ -162,7 +162,7 @@ const Project = () => {
               details={projectThree.details}
             ></ProjectItem>
           </div>
-          <div className="thumbnails absolute bottom-[50px] left-[50%] w-max z-10 flex gap-4">
+          <div className="thumbnails absolute bottom-[1rem] lg:bottom-[50px] left-[50%] w-max z-10 flex gap-4">
             <ProjectThumbnailItem
               imgSrc={projectTwo.img}
               altText={`Thumbnail of ${projectOne.details.title}`}

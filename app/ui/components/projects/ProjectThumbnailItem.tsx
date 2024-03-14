@@ -17,7 +17,7 @@ const ProjectThumbnailItem: React.FC<ProjectItemProps> = ({
   details,
 }) => {
   return (
-    <div className="item w-[150px] h-[220px] shrink-0 relative">
+    <div className="item  w-[120px] h-[170px] md:w-[130px] md:h-[190px]  lg:w-[150px] lg:h-[220px] shrink-0 relative">
       <Image
         src={imgSrc}
         alt={altText}

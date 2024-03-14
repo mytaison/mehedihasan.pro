@@ -46,8 +46,8 @@ const Navbar = () => {
             {/* MOBILE MENU */}
             <NavMenu onClick={() => setShowMobNav(!showMobNav)}></NavMenu>
             {/* BRAND */}
-            <Link href={"/"}>
-              <span className="w-2/6 text-2xl">MH</span>
+            <Link className={"w-2/6"} href={"/"}>
+              <span className="text-2xl">MH</span>
             </Link>
           </div>
           {/* NAVLINKS AND THEME SWITCH */}

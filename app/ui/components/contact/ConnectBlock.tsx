@@ -5,7 +5,7 @@ const ConnectBlock = () => {
   const btnStyle =
     "h-50 w-50 p-4 rounded-lg outline outline-1 outline-[#d1cece] dark:outline-[#676891] neumorph-convex dark:neumorph-convex-dark hover:neumorph-concave dark:hover:neumorph-flat-dark";
   return (
-    <div className="formBlock flex flex-row justify-evenly p-4 lg:p-8 2xl:p-16 rounded-lg neumorph-flat dark:neumorph-flat-dark w-full">
+    <div className="formBlock flex flex-row gap-4 flex-wrap justify-evenly p-4 lg:p-8 2xl:p-16 rounded-lg neumorph-flat dark:neumorph-flat-dark w-full">
       <a
         target="_blank"
         rel="noopener noreferrer"

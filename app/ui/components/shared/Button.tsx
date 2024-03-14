@@ -1,5 +1,8 @@
+import { IconType } from "react-icons";
+
 interface ButtonProps {
   label: string;
+  labelIcon?: IconType | null;
   className?: string;
   id?: string;
   themeBg?: boolean;
@@ -7,6 +10,7 @@ interface ButtonProps {
 }
 const Button: React.FC<ButtonProps> = ({
   label,
+  labelIcon: LabelIcon = null,
   className,
   id = `button_${label}`,
   themeBg = false,
@@ -19,10 +23,11 @@ const Button: React.FC<ButtonProps> = ({
     <a target="_blank" href={anchor}>
       <button
         type="button"
-        className={`w-[120px] h-[50px] rounded-lg p-4 border-xl bg-blue-400 ${bgStyle} ${className}`}
+        className={`w-[120px] h-[50px] rounded-lg p-4 border-xl bg-blue-400 ${bgStyle} ${className} inline-flex items-center justify-center lg:gap-2`}
         id={id}
         title={label}
       >
+        {LabelIcon ? <LabelIcon size={20}></LabelIcon> : ""}
         {label}
       </button>
     </a>
