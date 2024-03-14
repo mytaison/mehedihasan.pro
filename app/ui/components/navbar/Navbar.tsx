@@ -5,6 +5,7 @@ import NavLink from "./NavLink";
 import NavMenu from "./NavMenu";
 import useHash from "@/app/hooks/useHash";
 import { useParams } from "next/navigation";
+import Link from "next/link";
 
 const Navbar = () => {
   const [showMobNav, setShowMobNav] = useState(false);
@@ -45,7 +46,9 @@ const Navbar = () => {
             {/* MOBILE MENU */}
             <NavMenu onClick={() => setShowMobNav(!showMobNav)}></NavMenu>
             {/* BRAND */}
-            <span className="w-2/6 text-2xl">MH</span>
+            <Link href={"/"}>
+              <span className="w-2/6 text-2xl">MH</span>
+            </Link>
           </div>
           {/* NAVLINKS AND THEME SWITCH */}
           <div
