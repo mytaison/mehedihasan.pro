@@ -148,24 +148,24 @@ const Project = () => {
           <div className="list">
             <ProjectItem
               imgSrc={projectOne.img}
-              altText={""}
+              altText={`Image of ${projectOne.details.title}`}
               details={projectOne.details}
             ></ProjectItem>
             <ProjectItem
               imgSrc={projectTwo.img}
-              altText={""}
+              altText={`Image of ${projectTwo.details.title}`}
               details={projectTwo.details}
             ></ProjectItem>
             <ProjectItem
               imgSrc={projectThree.img}
-              altText={""}
+              altText={`Image of ${projectThree.details.title}`}
               details={projectThree.details}
             ></ProjectItem>
           </div>
           <div className="thumbnails absolute bottom-[50px] left-[50%] w-max z-10 flex gap-4">
             <ProjectThumbnailItem
               imgSrc={projectTwo.img}
-              altText={""}
+              altText={`Thumbnail of ${projectOne.details.title}`}
               details={{
                 title: projectTwo.details.title,
                 category: projectTwo.details.category,
@@ -173,7 +173,7 @@ const Project = () => {
             ></ProjectThumbnailItem>
             <ProjectThumbnailItem
               imgSrc={projectThree.img}
-              altText={""}
+              altText={`Thumbnail of ${projectTwo.details.title}`}
               details={{
                 title: projectThree.details.title,
                 category: projectThree.details.category,
@@ -181,7 +181,7 @@ const Project = () => {
             ></ProjectThumbnailItem>
             <ProjectThumbnailItem
               imgSrc={projectOne.img}
-              altText={""}
+              altText={`Thumbnail of ${projectThree.details.title}`}
               details={{
                 title: projectOne.details.title,
                 category: projectOne.details.category,
