@@ -21,7 +21,7 @@ type ProjectType = {
 const projectOne: ProjectType = {
   img: AirbnbCloneImg,
   details: {
-    title: "Airbnb Clone",
+    title: "Airybnb",
     category: "Full Stack",
     techs: [
       "NextJS",
@@ -33,7 +33,7 @@ const projectOne: ProjectType = {
       "Next-Auth",
     ],
     gitLink: "https://github.com/mytaison/AirbnbClone",
-    demoLink: "https://airbnb.mehedihasan.pro/",
+    demoLink: "https://airybnb.mehedihasan.pro/",
     details:
       "This project is built with NextJS 14, TypeScript, Next-Auth, MongoDB, Prisma, TailwindCSS, Cloudinary. The sole purpose of this project is to explore the features of NextJS 14 and doing some UI practise. For state management I have used Zustand. To host the application I have used MongoDB Atlas, Vercel and Cloudinary services.",
   },
